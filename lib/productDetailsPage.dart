@@ -10,7 +10,7 @@ class ProductDetails extends StatelessWidget {
     final product = ModalRoute.of(context)!.settings.arguments as Product;
 
     return Scaffold(
-       backgroundColor: Color.fromRGBO(199, 246, 201, 0.796),
+      backgroundColor: Color.fromRGBO(199, 246, 201, 0.796),
       appBar: AppBar(
         title: Text('Details'),
         backgroundColor: Colors.transparent,
@@ -18,38 +18,45 @@ class ProductDetails extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-           width: double.infinity,
-        height: double.infinity,
-            decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 1, 59, 15),
-              Color.fromARGB(208, 32, 122, 40)
-            ], // Define the gradient colors
-            begin: Alignment.topRight, // Define the gradient start point
-            end: Alignment.bottomRight, // Define the gradient end point
+          width: double.infinity,
+          height: double.infinity,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 1, 59, 15),
+                Color.fromARGB(208, 32, 122, 40)
+              ], // Define the gradient colors
+              begin: Alignment.topRight, // Define the gradient start point
+              end: Alignment.bottomRight, // Define the gradient end point
+            ),
           ),
-        ),
           child: Column(
             children: [
-                  Image.network(
+              Image.network(
                 product.image,
                 height: 200,
               ),
               SizedBox(height: 15),
               Text(
                 product.name,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
               SizedBox(
                 height: 10,
               ),
               Text(
                 r'$' + product.price,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.white),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
-        
-              SizedBox(height: 40,),
+              SizedBox(
+                height: 40,
+              ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(200, 50),

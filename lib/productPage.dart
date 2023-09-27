@@ -25,8 +25,8 @@ class ProductPage extends StatelessWidget {
               Color.fromARGB(255, 1, 59, 15),
               Color.fromARGB(208, 32, 122, 40)
             ], // Define the gradient colors
-            begin: Alignment.topRight, // Define the gradient start point
-            end: Alignment.bottomRight, // Define the gradient end point
+            begin: Alignment.topRight,
+            end: Alignment.bottomRight,
           ),
         ),
         child: Column(
@@ -41,11 +41,17 @@ class ProductPage extends StatelessWidget {
                 children: [
                   Text(
                     'Trending',
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 22,color: Colors.white),
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 22,
+                        color: Colors.white),
                   ),
                   Text(
                     'See All',
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15,color: Colors.white),
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 15,
+                        color: Colors.white),
                   )
                 ],
               ),
@@ -90,20 +96,54 @@ class ProductPage extends StatelessWidget {
                             ),
                             Text(products[index].name,
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.w400,color: Colors.white)),
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w400,
+                                    color: Colors.white)),
                             Text(
                               r'$' + products[index].price,
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.w700,color: Colors.white),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white),
                             )
                           ],
                         ),
                       );
                     }),
               ),
-            )
+            ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+
+        type: BottomNavigationBarType.shifting,
+
+        //selected icon
+        // selectedFontSize: 20,
+        selectedIconTheme:
+            IconThemeData(color: Color.fromARGB(208, 32, 122, 40), size: 40),
+        selectedItemColor: Color.fromARGB(208, 32, 122, 40),
+
+        //unselected
+        unselectedIconTheme: IconThemeData(
+          color: const Color.fromARGB(255, 0, 0, 0),
+        ),
+        unselectedItemColor: const Color.fromARGB(255, 0, 0, 0),
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: 'Favorite',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            label: 'Message',
+          ),
+        ],
       ),
     );
   }
