@@ -14,32 +14,32 @@ class productData {
     Product(
         1,
         0xffe7dabc,
-        'https://cdn.accentuate.io/31823165882414/11366956630062/StoJo_200206_Product-68537-v1584394430461.png?936x1160',
-        'Stojo Bottle',
+        'https://i.ibb.co/WKMrjCq/chocolates-removebg-preview.png',
+        'Chocolates',
         "25",
         'Chaldal.com is an online shop available in Dhaka, Chattogram and Jashore. We believe time is valuable to our fellow residents, and that they should not have to waste hours in traffic, brave bad weather and wait in line just to buy basic necessities like eggs! This is why Chaldal delivers everything you need right at your door-step and at no additional cost.'
     ),
     Product(
         2,
         0xffcabbce,
-        'https://cdn.accentuate.io/32587422892078/11366956630062/StoJo_200602_Product-76848-v1597674299708.png?936x1160',
-        'Stojo Cup',
+        'https://i.ibb.co/k9tCQhw/salted-biscuits-removebg-preview.png',
+        'Salted Biscuits',
         '20',
         'Chaldal.com is an online shop available in Dhaka, Chattogram and Jashore. We believe time is valuable to our fellow residents, and that they should not have to waste hours in traffic, brave bad weather and wait in line just to buy basic necessities like eggs! This is why Chaldal delivers everything you need right at your door-step and at no additional cost.'
     ),
     Product(
       3,
       0xffb8c6d0,
-      'https://cdn.accentuate.io/32638166302766/11366956630062/12oz-Sky-936x1160-v1600350957765.png?936x1160',
-      'Stojo Bundle',
+      'https://i.ibb.co/ftsMM4J/chips-pretzels-removebg-preview.png',
+      'Chips & Pretzels',
       '15',
       'Chaldal.com is an online shop available in Dhaka, Chattogram and Jashore. We believe time is valuable to our fellow residents, and that they should not have to waste hours in traffic, brave bad weather and wait in line just to buy basic necessities like eggs! This is why Chaldal delivers everything you need right at your door-step and at no additional cost.'
     ),
     Product(
       4,
       0xffdbbec1,
-      'https://cdn.accentuate.io/31244619612206/11366956630062/24_coral_1-v1574584667909.png?936x1160',
-      'Stojo Cup',
+      'https://i.ibb.co/2tVxcTL/noodles-removebg-preview.png',
+      'Noodles',
       '20',
       'Chaldal.com is an online shop available in Dhaka, Chattogram and Jashore. We believe time is valuable to our fellow residents, and that they should not have to waste hours in traffic, brave bad weather and wait in line just to buy basic necessities like eggs! This is why Chaldal delivers everything you need right at your door-step and at no additional cost.'
     )

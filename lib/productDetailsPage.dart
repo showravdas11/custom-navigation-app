@@ -10,8 +10,11 @@ class ProductDetails extends StatelessWidget {
     final product = ModalRoute.of(context)!.settings.arguments as Product;
 
     return Scaffold(
+       backgroundColor: Color.fromRGBO(199, 246, 201, 0.796),
       appBar: AppBar(
-        title: Text('sdfsffsf'),
+        title: Text('Details'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
       body: Center(
         child: Container(
