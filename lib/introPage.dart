@@ -52,13 +52,18 @@ class IntroPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(200, 50),
                   maximumSize: const Size(200, 50),
-                  backgroundColor: const Color.fromARGB(255, 255, 255, 255), // background (button) color
-                  foregroundColor: const Color.fromARGB(255, 0, 0, 0), // foreground (text) color
+                  backgroundColor: const Color.fromARGB(
+                      255, 255, 255, 255), // background (button) color
+                  foregroundColor: const Color.fromARGB(
+                      255, 0, 0, 0), // foreground (text) color
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => ProductPage(),));
+                  Navigator.pushNamed(context, '/allProduct');
                 },
-                child: Text("Next",style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),)),
+                child: Text(
+                  "Next",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                )),
             // CircularProgressIndicator()
           ],
         ),

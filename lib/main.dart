@@ -1,4 +1,6 @@
 import 'package:custom_navigation_app/introPage.dart';
+import 'package:custom_navigation_app/productDetailsPage.dart';
+import 'package:custom_navigation_app/productPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,27 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home:  IntroPage(),
-    );
-  }
-}
 
-class MyHomePage extends StatefulWidget {
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Home Page"),
-      ),
-      body: Center()
-// This trailing comma makes auto-formatting nicer for build methods.
+      initialRoute: '/',
+      routes: {
+        '/': (context) => IntroPage(),
+        '/allProduct':(context) => ProductPage()
+      },
     );
   }
 }
