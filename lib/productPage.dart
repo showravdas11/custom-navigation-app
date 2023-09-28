@@ -3,13 +3,21 @@ import 'package:custom_navigation_app/productDetailsPage.dart';
 import 'package:flutter/material.dart';
 import 'package:custom_navigation_app/productItem.dart';
 
-class ProductPage extends StatelessWidget {
+class ProductPage extends StatefulWidget {
   ProductPage({super.key});
 
+  @override
+  State<ProductPage> createState() => _ProductPageState();
+}
+
+class _ProductPageState extends State<ProductPage> {
+  int _myIndex = 0;
   List products = productData().products;
 
   @override
   Widget build(BuildContext context) {
+  
+
     return Scaffold(
       backgroundColor: Color.fromRGBO(199, 246, 201, 0.796),
       appBar: AppBar(
@@ -117,6 +125,13 @@ class ProductPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
 
+        onTap: (index) {
+          setState(() {
+            _myIndex = index;
+          });
+        },
+
+        currentIndex: _myIndex,
         type: BottomNavigationBarType.shifting,
 
         //selected icon
